@@ -1,0 +1,46 @@
+= Simple Notes
+:author: First Last
+:email: firstlast@mail.com
+:experimental:
+:icons: font
+:stylesdir: ../stylesheets
+:stylesheet: simple.css
+:imagesdir: ../images
+:source-highlighter: coderay
+:nofooter:
+:stem:
+
+== 2024-10-10 15:17
+
+.Every test is written in a file whose name ends with `_test.go`
+[source,go]
+----
+func Test_walks(t *testing.T) { <1>
+  result := walks(4,4)
+  if result != 20 {
+    t.Error("incorrect result: expected 20, got", result) <2>
+  }
+}
+----
+<1> Requires the _testing_ package
+<2> Error call
+
+The <<mathforwalks, section>> below has an example of some <<walks, walks>>.
+
+[#mathforwalks]
+== 2024-10-09 12:28
+
+The number of staircase walks on a grid with stem:[m] horizontal lines and stem:[n] vertical lines is given by
+
+[latexmath]
+++++
+  \left(\frac{m+n}{n}\right) = \frac{(m+n)!}{m!n!}
+++++
+
+=== Example
+
+[example#walks]
+.Six of the 20 possible walks for a stem:[4 \times 4] grid
+--
+image::staircase.png[width=60%]
+--

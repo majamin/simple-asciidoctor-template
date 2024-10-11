@@ -1,0 +1,22 @@
+= A Simple Asciidoctor Template
+:author: Marian Minar
+:email: majamin (AT) gmail
+:imagesdir: images
+
+== Dependencies
+
+* `ruby` and ruby's `bundler`
+* `make`
+
+== Instructions
+
+. Clone the repo: `git clone https://github.com/majamin/simple-asciidoctor-template`
+. `cd geist-asciidoctor-template`
+. `bundle install`
+. `make`
+
+Build files will compile in the `build` directory.
+
+== Preview
+
+image::example.png[width=600]

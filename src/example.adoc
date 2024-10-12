@@ -1,4 +1,4 @@
-= Simple Notes
+= Simple Example
 :author: First Last
 :email: firstlast@mail.com
 :experimental:

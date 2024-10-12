@@ -3,19 +3,47 @@
 :email: majamin (AT) gmail
 :imagesdir: images
 
-== Dependencies
+== A simple start
 
-* `ruby` and ruby's `bundler`
-* `make`
+.Requirements
+* `asciidoctor` executable
 
-== Instructions
+//
 
-. Clone the repo: `git clone https://github.com/majamin/simple-asciidoctor-template`
-. `cd geist-asciidoctor-template`
+. Copy `simple.css` to the location of your `file.adoc`,
+. Put `:stylesheet: simple.css` in your `file.adoc` file,
+. Run `asciidoctor file.adoc`.
+
+== The whole thing
+
+.Requirements
+* `asciidoctor` executable
+* `ruby` and ruby `bundle`
+
+//
+
+. Clone: `git clone https://github.com/majamin/simple-asciidoctor-template`
+. `cd simple-asciidoctor-template`
 . `bundle install`
 . `make`
 
 Build files will compile in the `build` directory.
+
+== Watch and show
+
+If you're in a tmux session, running `watch-and-show.sh` can load a
+nice dev environment, but is not necessary to be able to use this project.
+Running the script creates new windows in the current session to be
+able to monitor the live build and show.
+
+.Requirements
+* All of the above, and
+* `browser-sync` and `nodemon` installed via npm,
+* `tmux`
+
+NOTE: I'm currently running this project in WSL, so my browser points to
+_firefox.exe_. Modify that as you see fit. Read the comments inside the script
+for more info.
 
 == Preview
 

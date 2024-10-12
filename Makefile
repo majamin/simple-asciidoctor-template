@@ -17,7 +17,7 @@ all: $(HTML_FILES)
 # Rule to create regular HTML documents
 $(BUILD_DIR)/%.html: $(SRC_DIR)/%.adoc
 	@mkdir -p $(dir $@)
-	$(ASCIIDOCTOR) $(DIAGRAM_OPTION) -o $@ $<
+	(set -x; $(ASCIIDOCTOR) $(DIAGRAM_OPTION) -o $@ $<) >>$@.log 2>&1
 
 # Clean up the build directory
 clean:

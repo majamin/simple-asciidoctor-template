@@ -1,0 +1,38 @@
+/* This css file overrides some css styles*/
+
+html .reveal {
+  font-family: "Lora", serif;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5 {
+  font-family: "Poppins", sans;
+  font-weight: 800;
+  color: #313f68;
+}
+
+.reveal h2 {
+  font-size: 4rem;
+}
+
+.reveal * > .title {
+  font-size: 1.5rem;
+}
+
+.colist {
+  font-size: 1.25rem;
+}
+
+p > a {
+  font-family: inherit;
+  letter-spacing: -0.02em;
+}
+
+.reveal code {
+  font-family: "JetBrains Mono";
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.9);
+}

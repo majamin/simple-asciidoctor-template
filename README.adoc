@@ -1,0 +1,43 @@
+= A Simple Asciidoctor Template
+:author: Marian Minar
+:email: majamin (AT) gmail
+:imagesdir: images
+
+This repo provides a simple asciidoctor template (see below for preview).
+
+(Optional) `simple.sh` enables you to build a single (or multiple) asciidoctor files.
+
+== Quick start
+
+You can just use the usual directives for including a stylesheet in your asciidoctor files. e.g.:
+
+* Download the "simple.css" stylesheet
+* Add `:stylesheet: simple.css` to your document attributes
+
+== Full
+
+This will enable you to handle single and nested `src` files to build with simple.css.
+
+WARNING: the script points to `$HOME/.local/src/simple-asciidoctor-template` -
+please modify `simple.sh` to point to wherever you cloned this repo!
+
+Ensure that `ruby` and `ruby-bundler` are installed. Then:
+
+* `git clone https://github.com/majamin/simple-asciidoctor-template`
+* `cd simple-asciidoctor-template`
+* `bundle install`
+* `chmod +x ./simple.sh`
+
+.Possible commands
+* `./simple.sh` will print usage
+* `./simple.sh src/example.adoc` will create `src/example.html`
+* `./simple.sh --handout src/example.adoc` will create `src/example-handout.html`
+* `./simple.sh --reveal src/example.adoc` will create `src/example-reveal.html`
+* `./simple.sh --reveal src/example.adoc` will create `src/example-reveal.html`
+* `./simple.sh src` will produce for each `adoc` file in the `src` directory.
+  Output files in `build`. You can still use the handout/reveal flags in this
+  mode as well.
+
+== Preview
+
+image::example.png[width=600]

@@ -18,9 +18,6 @@ You can just use the usual directives for including a stylesheet in your asciido
 
 This will enable you to handle single and nested `src` files to build with simple.css.
 
-WARNING: the script points to `$HOME/.local/src/simple-asciidoctor-template` -
-please modify `simple.sh` to point to wherever you cloned this repo!
-
 Ensure that `ruby` and `ruby-bundler` are installed. Then:
 
 * `git clone https://github.com/majamin/simple-asciidoctor-template`

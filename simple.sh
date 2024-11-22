@@ -8,6 +8,7 @@ DEFAULT_OPTIONS=(
 	-a revealjs_fragmentInURL=true
 	-a experimental
 	-a stem
+	-a sectlinks
 	-a icons=font
 	-a data-uri
 	-a allow-uri-read

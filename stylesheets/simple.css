@@ -9,7 +9,7 @@
   --color-light: hsl(225 36% 80%);
   --color-base: hsl(225 36% 50%);
   --color-dark: hsl(225 36% 30%);
-  --color-lightgrey: hsl(225 10% 60%);
+  --color-lightgrey: hsl(225 10% 40%);
   --highlight-caution: hsl(55, 80%, 60%);
 }
 
@@ -18,8 +18,12 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
-a {
+/* select anchors not part of a heading */
+a:not(:is(h1 a, h2 a, h3 a, h4 a, h5 a, h6 a)) {
   background: none;
+  font-family: var(--mono-font);
+  font-size: 0.9875rem;
+  letter-spacing: -0.05em;
 }
 
 a:focus {
@@ -29,12 +33,6 @@ a:focus {
 a:active,
 a:hover {
   outline: 0;
-}
-
-p > a {
-  font-family: var(--mono-font);
-  font-size: 0.9375rem;
-  letter-spacing: -0.05em;
 }
 
 h1 {
@@ -337,7 +335,7 @@ td {
 
 a {
   color: var(--color-base);
-  text-decoration: none;
+  text-decoration: underline;
   line-height: inherit;
 }
 
@@ -448,7 +446,7 @@ code {
   font-family: var(--mono-font);
   font-size: 0.85em;
   font-weight: 400;
-  color: rgba(0, 0, 0, 0.9);
+  /* color: rgba(0, 0, 0, 0.9); */
 }
 
 ul,
@@ -635,6 +633,7 @@ h6 strong {
 }
 
 .listingblock > .title > code {
+  color: inherit;
   background: none;
 }
 
@@ -1237,7 +1236,7 @@ table.tableblock > .title,
   text-rendering: optimizeLegibility;
   text-align: left;
   font-family: var(--main-font);
-  font-size: 0.75rem;
+  font-size: 1rem;
   /* font-style: italic; */
 }
 

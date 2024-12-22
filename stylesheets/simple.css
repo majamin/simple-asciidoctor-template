@@ -444,9 +444,10 @@ small {
 
 code {
   font-family: var(--mono-font);
-  font-size: 0.85em;
+  font-size: 0.875em;
+  font-size: 1em;
   font-weight: 400;
-  /* color: rgba(0, 0, 0, 0.9); */
+  color: rgba(0, 0, 0, 0.8);
 }
 
 ul,
@@ -621,7 +622,7 @@ h6 strong {
 }
 
 :not(pre):not([class^="L"]) > code {
-  font-size: 0.85em;
+  font-size: 0.875em;
   font-style: normal !important;
   letter-spacing: 0;
   padding: 0.1em 0.5ex;
